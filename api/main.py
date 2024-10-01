@@ -15,6 +15,7 @@ from dotenv import dotenv_values
 from pymongo import MongoClient
 from api.routes import router
 from fastapi.middleware.cors import CORSMiddleware
+import certifi
 
 config = dotenv_values(".env")
 
@@ -33,7 +34,7 @@ app.add_middleware(
 @app.on_event("startup")
 def startup_db_client():
     """Connects to database client on startup"""
-    app.mongodb_client = MongoClient(config["ATLAS_URI"])
+    app.mongodb_client = MongoClient(config["ATLAS_URI"], ssl=True, ssl_ca_certs=certifi.where())
     app.database = app.mongodb_client[config["DB_NAME"]]
 
 @app.on_event("shutdown")
