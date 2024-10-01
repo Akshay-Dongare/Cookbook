@@ -46,7 +46,7 @@ this file. If not, please write to: help.cookbook@gmail.com
    /* the effect hook below does an api call to get the recipe details
       using the recipe id as soon as the compnent gets loaded up */
    useEffect(() => {
-     dispatch(getRecipeInfoInitiator('https://cook-book.ml/recipe/'+id));
+     dispatch(getRecipeInfoInitiator('https://cookbook-nz7u.onrender.com/recipe/'+id));
      return () => {
        // state cleanup here
      }
