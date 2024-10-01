@@ -20,7 +20,7 @@ config = dotenv_values(".env")
 
 app = FastAPI()
 
-origins = ['https://cookbook-l5ltl35m8-akshay-dongares-projects.vercel.app']
+origins = ['https://cookbook-alpha.vercel.app/']
 
 app.add_middleware(
     CORSMiddleware,
