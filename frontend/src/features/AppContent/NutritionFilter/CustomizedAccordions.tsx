@@ -85,7 +85,7 @@ export default function CustomizedAccordions() {
         console.log(sug)
         console.log(pro)
         dispatch(
-          getRecipeListInitiator('https://cookbook-nz7u.onrender.com//recipe/search2/', {
+          getRecipeListInitiator('https://cookbook-nz7u.onrender.com/recipe/search2/', {
               page: 1,
               caloriesUp: cal,
               fatUp: fat,
