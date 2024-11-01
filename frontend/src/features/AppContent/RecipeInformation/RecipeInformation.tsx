@@ -84,7 +84,7 @@ this file. If not, please write to: help.cookbook@gmail.com
    /* the effect hook below does an api call to get the recipe details
       using the recipe id as soon as the compnent gets loaded up */
    useEffect(() => {
-     dispatch(getRecipeInfoInitiator('https://cookbook-nz7u.onrender.com/recipe/'+id));
+     dispatch(getRecipeInfoInitiator('https://cookbook-czwd.onrender.com/recipe/'+id));
      return () => {
        // state cleanup here
      }
@@ -111,7 +111,7 @@ this file. If not, please write to: help.cookbook@gmail.com
     `;
     const handleSubmit = async () => {
       try {
-          const result = await axios.post('https://cookbook-nz7u.onrender.com/recipe/recommend-recipes/', { query: input, context: recipeDetailsforLLM });
+          const result = await axios.post('https://cookbook-czwd.onrender.com/recipe/recommend-recipes/', { query: input, context: recipeDetailsforLLM });
           setResponse(result.data.response);
       } catch (error) {
           console.error('Error fetching recipe recommendations:', error);

@@ -101,7 +101,7 @@ const GetIngredients = () => {
     if (val.length >= 3) {
       dispatch(
         getIngredientsInitiator(
-          'https://cookbook-nz7u.onrender.com/recipe/ingredients/' + val
+          'https://cookbook-czwd.onrender.com/recipe/ingredients/' + val
         )
       )
     }
@@ -126,7 +126,7 @@ const GetIngredients = () => {
     if (ingredientsArray.length > 0) {
       sessionStorage.setItem('ingredients', JSON.stringify(ingredientsArray))
       dispatch(
-        getRecipeListInitiator('https://cookbook-nz7u.onrender.com/recipe/search/', {
+        getRecipeListInitiator('https://cookbook-czwd.onrender.com/recipe/search/', {
           ingredients: ingredientsArray,
           page: 1,
         })

@@ -90,7 +90,7 @@ const GetTags = () => {
       if (ingredientsArray.length > 0) {
         sessionStorage.setItem('ingredients', JSON.stringify(ingredientsArray))
         dispatch(
-          getRecipeListInitiator('https://cookbook-nz7u.onrender.com/recipe/search/', {
+          getRecipeListInitiator('https://cookbook-czwd.onrender.com/recipe/search/', {
             ingredients: ingredientsArray,
             page: 1,
           })
@@ -116,7 +116,7 @@ const GetTags = () => {
     if (ingredientsArray.length > 0) {
       sessionStorage.setItem('ingredients', JSON.stringify(ingredientsArray))
       dispatch(
-        getRecipeListInitiator('https://cookbook-nz7u.onrender.com/recipe/search/', {
+        getRecipeListInitiator('https://cookbook-czwd.onrender.com/recipe/search/', {
           ingredients: ingredientsArray,
           page: 1,
         })

@@ -1,7 +1,7 @@
 import requests
 import pytest
 
-BASE_URL = "https://cookbook-nz7u.onrender.com/recipe"
+BASE_URL = "https://cookbook-czwd.onrender.com/recipe"
 
 def test_list_recipes():
     """Test retrieving a list of recipes."""
